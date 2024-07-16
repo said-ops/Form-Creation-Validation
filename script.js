@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const emailInput = document.getElementById('email');
         const passInput = document.getElementById('password');
         //retrieve input value and trim it
-        const userName = userInput.value.trim();
+        const username = userInput.value.trim();
         const email = emailInput.value.trim();
         const password = passInput.value.trim();
         //Initialize Validation Variables
         let isValid = true;
         let messages = [];
         //Username Validation
-        if(userName.length < 3){
+        if(username.length < 3){
             isValid = false;
             messages.push('invalid user name,Try again!');
         }
